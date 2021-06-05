@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.nav {
+    width: 26%;
+}
+   
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.nav__item {
+    list-style-type: none;
+    box-sizing: border-box;
+    display: flex;
+    font-size: $text-font-size;
+    
+}
+
+.header__clients-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: $text-font-size;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.header__login-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: $text-font-size;
+    font-weight: 300;
+    cursor: pointer;
+   
+}
+
+.login__icon {
+    width: 24px;
+    height: 24px;
+}
+

@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+$text-font-size: 18px;
+
+$font-family-segoe: 'Segoe UI';
+$font-family-whitney: 'Whitney';
+
+
+
+
+@import './components/header.scss';
+@import './components/first-screen.scss';
+@import './components/second-screen.scss';

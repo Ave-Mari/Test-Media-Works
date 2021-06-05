@@ -1,0 +1,61 @@
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.first-screen {
+    background: url('./../../images/first-screen-pic.png') 75% 61% no-repeat,
+    linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    padding-top: 30px;
+    padding-bottom: 97px;
+    font-family: $font-family-segoe;
+}
+
+
+
+
+.first-screen__img-block {
+    width: 689px;
+    height: 442px;
+}
+
+
+
+.first-screen__info-block {
+    width: 500px;
+}
+
+.first-screen__headline {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.first-screen__text {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+
+.registration-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: $text-font-size;
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    background: #F25B24;
+    padding: 16px 60px;
+    cursor: pointer;
+
+    &:hover {
+        background: #ce4919;
+    }
+}
+
