@@ -15,6 +15,23 @@ $font-family-whitney: 'Whitney';
 
 
 
+$sizes: ("xs":320px, "s": 460px,"sm":576px, "md":768px, "ipadpro10": 834px,"lg":992px, "xl":1200px);
+
+@mixin media($minmax, $media) {
+    @each $size, $resolution in $sizes {
+      @if $media == $size {
+        @media only screen and (#{$minmax}-width: $resolution) {
+          @content;
+        }
+      }
+    }
+  }
+
+
+
+
 @import './components/header.scss';
+@import './components/burger-menu.scss';
 @import './components/first-screen.scss';
 @import './components/second-screen.scss';
+@import './components/media.scss';

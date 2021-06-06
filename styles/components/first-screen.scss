@@ -2,43 +2,97 @@
 .container {
     width: 1200px;
     margin: 0 auto;
+
+    
+
+    @include media(max, 'xl') {
+        width: 85%;
+    }
+
+    @include media(max, 'lg') {
+        width: 85%;
+    }
+
+    @include media(max, 'md') {
+        width: 85%;
+    }
+    @include media(max, 'sm') {
+        width: 85%;
+    }
+
+    @include media(max, 'xs') {
+        width: 90%;
+    }
 }
 
 
 
 .first-screen {
-    background: url('/Test-Media-Works/images/first-screen-pic.png') 75% 61% no-repeat,
+    background: url("./../../images/first-screen-pic.png") 99% 65% no-repeat, 
     linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    padding-bottom: 169px;
     padding-top: 30px;
-    padding-bottom: 97px;
     font-family: $font-family-segoe;
+
+
+    @include media(max, 'xl') {
+        background-image: url("./../../images/first-screen-pic.png") 77% 89% no-repeat,
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    }
+
+    @include media(max, 'lg') { 
+        background: url("./../../images/first-screen-pic-992.png") 92% 66% no-repeat, 
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%)
+        
+    }
+
+    @include media(max, 'md') {
+        background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    }
 }
-/////!!!!!!!!
+
+
+/////!!!!!!/Test-Media-Works/images/first-screen-pic.png
 
 
 
-.first-screen__img-block {
-    width: 689px;
-    height: 442px;
-}
+// .first-screen__img-block {
+//     width: 689px;
+//     height: 442px;
+// }
 
 
 
 .first-screen__info-block {
-    width: 500px;
+    width: 42%;
+
+    @include media(max, 'md') {
+        width: 85%;
+    }
+
+    @include media(max, 'xs') {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .first-screen__headline {
     color: #fff;
-    font-size: 50px;
+    font-size: 46px;
     margin-top: 0px;
     margin-bottom: 30px;
+
+    @include media(max, 'xs') {
+        font-size: 34px;
+    }
 }
 
 .first-screen__text {
     color: #fff;
-    font-size: 24px;
-    margin-bottom: 60px;
+    font-size: 23px;
+    margin-bottom: 69px;
 }
 
 
@@ -56,6 +110,12 @@
 
     &:hover {
         background: #ce4919;
+    }
+
+
+    @include media(max, 'md') {
+        padding: 18px 62px;
+        font-size: 20px;
     }
 }
 

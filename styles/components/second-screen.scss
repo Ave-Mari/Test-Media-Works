@@ -1,29 +1,124 @@
+.second-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .second-screen__headline {
     font-size: 40px;
+    margin-top: 0;
     margin-bottom: 50px;
     font-family: $font-family-whitney;
     font-weight: 600;
     padding-top: 130px;
+
+    @include media(max, 'md') {
+        font-size: 45px;
+    }
+    @include media(max, 'xs') {
+        font-size: 27px;
+    }
 }
 
 .benefits__list {
+    width: 100%;
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 235px 235px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     padding-left: 0;
     font-family: $font-family-segoe;
 
     margin-bottom: 130px;
+
+
+    @include media(max, 'xl') {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 255px 255px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    @include media(max, 'lg') {
+        grid-template-columns: 100%;
+        grid-template-rows: 247px 247px 247px 247px;
+        grid-column-gap: 7px;
+        grid-row-gap: 7px;
+    }
+
+    @include media(max, 'ipadpro10') {
+        grid-template-columns: 100%;
+        grid-template-rows: 275px 275px 275px 275px;
+    }
+
+
+    @include media(max, 'md') {
+        grid-template-columns: 100%;
+        grid-template-rows: 310px 310px 310px 310px;
+
+    }  
+
+    @include media(max, 'sm') {
+        grid-template-columns: 100%;
+        grid-template-rows: 435px 435px 435px 435px;
+        grid-row-gap: 18px;
+
+    }
+
+    @include media(max, 'xs') {
+        grid-template-columns: 100%;
+        grid-template-rows: 435px 435px 435px 435px;
+        grid-row-gap: 18px;
+
+    }
+}
+
+.benefits__wrapper {
+
+    margin: 0 auto;
+
+    // @include media(max, 'lg') {
+    //     //width: 87%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    // @include media(max, 'sm') {
+    //     padding-left: 0;
+    //     display: block;
+    // }
+
+    // @include media(max, 'xs') {
+    //     margin-bottom: 252%;
+    // }
+
 }
 
 .benefits__item {
     list-style-type: none;
     background: #F6F5F9;
     border-radius: 6px;
-    padding: 21px 10px 21px 40px;
+    padding: 21px 10px 12px 40px;
     display: flex;
     justify-content: space-between;
+  
+
+
+    @include media(min, 'sm') {
+        flex-direction: row;
+    }
+
+    @include media(max, 'sm') {
+        padding-left: 28px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
  
 
 }
@@ -31,36 +126,272 @@
 .benefits__headline {
     font-size: 22px;
     font-weight: 600;
-    margin-top: 0;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    @include media(max, 'xl') {
+        margin-top: 0;
+        margin-bottom: 7px;
+    }
+
+    
+
+    @include media(max, 'ipadpro10') {
+        //
+    }
+
+    @include media(max, 'lg') {
+        // margin-bottom: 12px;
+        // margin-top: 5px;
+        font-size: 23px;
+    }
+
+    @include media(max, 'md') {
+        font-size: 28px;
+    }
+
+    @include media(max, 'sm') {
+        font-size: 22px;
+    }
 }
 
 .benefits__text {
     font-size: 16px;
     font-weight: 400;
+
+      
+    @include media(max, 'lg') {
+        width: 78%;
+        font-size: 18px;
+    }
+
+    @include media(max, 'md') {
+        font-size: 19px;
+        width: 100%;
+    }
+
+    @include media(max, 'sm') {
+        font-size: $text-font-size;
+    }
+
+    @include media(max, 'xs') {
+        width: 90%;
+    }
 }
 
 
-.benefits__icon {
-    width: 132%;
-    height: 119%;
+.benefits__icon__time {
+    width: 100%;
+    height: 100%;
     display: block;
+
+    @include media(max, 'lg') {
+        width: 33%;
+        height: 94%;
+    }
+    
+
+    @include media(max, 'ipadpro10') {
+        width: 94%;
+    }
+
+    @include media(max, 'md') {
+        width: 114%;
+        height: 92%;
+        padding-top: 2%;
+    }
+
+    @include media(max, 'xs') {
+        width: 86%;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    
 }
+
+.benefits__icon__speed {
+    width: 47%;
+    height: 96%;
+    display: block;
+
+    @include media(max, 'lg') {
+        width: 31%;
+        height: 92%;
+    }
+
+      
+    @include media(max, 'md') {
+        width: 84%;
+        height: 92%;
+        padding-top: 2%;
+    }
+    @include media(max, 'xs') {
+        width: 80%;
+        height: 77%;
+        padding-top: 0;
+    }
+  }
+
+.benefits__icon__information {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+
+
+    @include media(max, 'lg') {
+        width: 31%;
+        height: 94%;
+    }
+
+
+    @include media(max, 'ipadpro10') {
+        width: 92%;
+    }
+
+    
+    @include media(max, 'md') {
+        width: 94%;
+        height: 92%;
+        padding-top: 2%;
+    }
+
+    @include media(max, 'xs') {
+        width: 82%;
+        height: 53%;
+        padding-top: 0;
+    }
+}
+
+.benefits__icon__chat {
+    width: 79%;
+    height: 100%;
+    display: block;
+
+    @include media(max, 'lg') {
+        width: 39%;
+    }
+
+
+
+    @include media(max, 'ipadpro10') {
+        width: 96%;
+    }
+    
+    @include media(max, 'md') {
+        width: 85%;
+        padding-top: 2%;
+    }
+
+    @include media(max, 'sm') {
+        width: 41%;
+        height: 46%;
+    }
+
+    
+    @include media(max, 'xs') {
+        width: 79%;
+        height: 100%;
+        padding-top: 0;
+    }
+}  
+   
 
 
 .benefits__info {
     margin-right: 10%;
+    width: 100%;
+
+
+    @include media(max, 'xl') {
+        margin-right: 3%;
+        width: 80%;
+        
+    }
+    
+    @include media(max, 'lg') {
+        margin-right: 3%;
+       // width: 146%;
+    }
+
+
+    @include media(max, 'md') {
+        //width: 146%;
+
+    }
+
+    
+    @include media(max, 'sm') {
+        width: 94%;
+        margin-bottom: 8%;
+    }
+
+
+    @include media(max, 'xs') {
+        margin-right: 0;
+        margin-bottom: 8%;
+    }
+
+      
+       
+
+    p {
+        margin: 0;
+    }
 }
 
 
 .second-screen__registration {
-    background: url("./../../images/registration.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
-    max-width: 1100px;
+    background: url("./../../images/registration.png") 100% 60% no-repeat, 
+    linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);    
+    width: 93%;
     max-height: 371px;
     border-radius: 10px;
     padding-top: 70px;
-    padding-left: 70px;
+    padding-left: 67px;
     padding-bottom: 70px;
     margin-bottom: 185px;
+
+
+    @include media(max, 'xl') {
+        width: 95%;
+    }
+
+    @include media(max, 'lg') {
+        padding-top: 39px;
+        padding-left: 36px;
+        width: 97%;
+
+        background: url("./../../images/registration-992.png") 100% 60% no-repeat, 
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%); 
+    }
+
+    @include media(max, 'md') {
+        width: 95%;
+        padding-bottom: 46px;
+        background: url("./../../images/registration-768.png") 100% 60% no-repeat, 
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+        
+        
+    }
+
+    @include media(max, 'sm') {
+        margin-top: 10%;
+        width: 93%;
+        padding-top: 24px;
+        padding-left: 24px;
+        background: url("./../../images/registration-sm.png") 100% 60% no-repeat, 
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    }
+
+    @include media(max, 'xs') {
+        width: 95%;
+        background: url("./../../images/registration-sm.png") 100% 67% no-repeat, 
+        linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+        width: 263px;
+        padding-bottom: 110px;
+    }
 }
 
 .second-screen__registration__headline {
@@ -71,6 +402,27 @@
     width: 50%;
     margin-top: 0px;
     margin-bottom: 46px;
+
+    @include media(max, 'xl') {
+        font-size: 24px;
+    }
+
+    @include media(max, 'md') {
+        font-size: 30px;
+        margin-bottom: 29px;
+        width: 55%;
+    }
+
+    @include media(max, 'sm') {
+        width: 80%;
+        margin-bottom: 59px;
+        font-size: 28px;
+    }
+
+    @include media(max, 'xs') {
+        margin-bottom: 127px;
+        
+    }
     
 
 }

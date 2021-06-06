@@ -13,7 +13,7 @@
     <div class="wrapper">        
         <div class="first-screen"> 
             <div class="container">
-            <header class="header">
+            <header class="header">                
                 <div class="header__logo">    
                     <img src="./images/logo.png" alt="logo">            
                 </div>
@@ -25,6 +25,24 @@
                             <use xlink:href="svg/sprite.svg#login"></use>
                         </svg> 
                         <button class="header__login-btn">Войти</button></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" data-state="" onclick="burgerClick(this)">
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                </div>
+
+                <nav class="nav-burger">
+                    <ul class="nav-burger__list">
+                        <li class="nav-burger__item">
+                            <button class="nav-burger__clients-btn">Клиентам</button>
+                        </li>
+                        <li class="nav-burger__item">              
+                            <svg class="login__icon">
+                            <use xlink:href="svg/sprite.svg#login"></use>
+                        </svg> 
+                        <button class="nav-burger__login-btn">&#160;Войти</button></li>
                     </ul>
                 </nav>
             </header>
@@ -41,53 +59,56 @@
     <section class="second-screen">
         <div class="container">
             <h2 class="second-screen__headline">Меньше условий – больше возможностей</h2>
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <div class="benefits__info">
-                    <h3 class="benefits__headline">Экономия времени</h3>
-                    <div class="benefits__text">
-                        <p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+            <div class="benefits__wrapper">
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <div class="benefits__info">
+                        <h3 class="benefits__headline">Экономия времени</h3>
+                        <div class="benefits__text">
+                            <p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+                        </div>
                     </div>
-                </div>
-                     <svg class="benefits__icon">
-                        <use xlink:href="svg/sprite.svg#time"></use>
-                    </svg> 
-                </li>
-                <li class="benefits__item">
-                    <div class="benefits__info">
-                    <h3 class="benefits__headline">Никаких задержек</h3>
-                    <div class="benefits__text">
-                        <p>Вы получаете запросы сразу же после отправки клиентом.</p>
+                         <svg class="benefits__icon__time">
+                            <use xlink:href="svg/sprite.svg#time"></use>
+                        </svg> 
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__info">
+                        <h3 class="benefits__headline">Никаких задержек</h3>
+                        <div class="benefits__text">
+                            <p>Вы получаете запросы сразу же после отправки клиентом.</p>
+                        </div>
                     </div>
-                </div>
-                   <svg class="benefits__icon">
-                        <use xlink:href="svg/sprite.svg#speed"></use>
-                    </svg> 
-                </li>
-                <li class="benefits__item">
-                    <div class="benefits__info">
-                    <h3 class="benefits__headline">Максимальная информативность</h3>
-                    <div class="benefits__text">
-                        <p>В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+                      <svg class="benefits__icon__speed">
+                            <use xlink:href="svg/sprite.svg#speed"></use>
+                        </svg>  
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__info">
+                        <h3 class="benefits__headline">Максимальная информативность</h3>
+                        <div class="benefits__text">
+                            <p>В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+                        </div>
                     </div>
-                </div>
-                  <svg class="benefits__icon">
-                        <use xlink:href="svg/sprite.svg#information"></use>
-                    </svg> 
-                </li>
-                <li class="benefits__item">
-                    <div class="benefits__info">
-                    <h3 class="benefits__headline">Удобство общения</h3>
-                    <div class="benefits__text">
-                        <p>Для каждого запроса у вас открыт чат
-                            с клиентом с возможностью отправки документов.</p>
+                      <svg class="benefits__icon__information">
+                            <use xlink:href="svg/sprite.svg#information"></use>
+                        </svg> 
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__info">
+                        <h3 class="benefits__headline">Удобство общения</h3>
+                        <div class="benefits__text">
+                            <p>Для каждого запроса у вас открыт чат
+                                с клиентом с возможностью отправки документов.</p>
+                        </div>
                     </div>
-                </div>
-                    <svg class="benefits__icon">
-                        <use xlink:href="svg/sprite.svg#chat"></use>
-                    </svg> 
-                </li>
-            </ul>
+                        <svg class="benefits__icon__chat">
+                            <use xlink:href="svg/sprite.svg#chat"></use>
+                        </svg> 
+                    </li>
+                </ul>
+            </div>
+            
             <div class="second-screen__registration">
                 <h2 class="second-screen__registration__headline">
                     Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов
@@ -98,12 +119,7 @@
     </section>
     </div>
 
-
-    <!-- <svg class="feature__icon">
-        <use xlink:href="svg/sprite.svg#leaf"></use>
-    </svg>
-
-    <symbol id="phone" -->
+<script src="./js/burger-menu.js"></script>
  
     
 </body>

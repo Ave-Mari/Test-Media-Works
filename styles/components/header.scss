@@ -2,10 +2,27 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 130px;
+
+    @include media(max, 'xs') {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 .nav {
-    width: 26%;
+    width: 25%;
+
+    @include media(max, 'md') {
+        width: 40%;
+    }
+    @include media(max, 'sm') {
+        width: 55%;
+        display: none;
+        
+        
+    }
+
+    
 }
    
 
@@ -22,6 +39,8 @@
     box-sizing: border-box;
     display: flex;
     font-size: $text-font-size;
+
+
     
 }
 
@@ -32,6 +51,10 @@
     font-size: $text-font-size;
     font-weight: 300;
     cursor: pointer;
+
+    @include media(max, 'md') {
+        font-size: 25px;
+    }
 }
 
 .header__login-btn {
@@ -41,6 +64,10 @@
     font-size: $text-font-size;
     font-weight: 300;
     cursor: pointer;
+
+    @include media(max, 'md') {
+        font-size: 25px;
+    }
    
 }
 

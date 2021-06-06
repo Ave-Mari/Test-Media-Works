@@ -1,0 +1,7 @@
+.burger-menu__line {
+  display: block;
+  background: #fff;
+  border-radius: 3px;
+  width: 19px;
+  height: 3px;
+}
