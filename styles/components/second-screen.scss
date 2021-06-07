@@ -343,7 +343,7 @@
 
 
 .second-screen__registration {
-    background: url("./../../images/registration.png") 100% 60% no-repeat, 
+    background: url("/Test-Media-Works/images/registration.png") 100% 60% no-repeat, 
     linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);    
     width: 93%;
     max-height: 371px;
@@ -363,14 +363,14 @@
         padding-left: 36px;
         width: 97%;
 
-        background: url("./../../images/registration-992.png") 100% 60% no-repeat, 
+        background: url("/Test-Media-Works/images/registration-992.png") 100% 60% no-repeat, 
         linear-gradient(90deg, #2D1686 0%, #4E33B5 100%); 
     }
 
     @include media(max, 'md') {
         width: 95%;
         padding-bottom: 46px;
-        background: url("./../../images/registration-768.png") 100% 60% no-repeat, 
+        background: url("/Test-Media-Works/images/registration-768.png") 100% 60% no-repeat, 
         linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
         
         
@@ -381,13 +381,13 @@
         width: 93%;
         padding-top: 24px;
         padding-left: 24px;
-        background: url("./../../images/registration-sm.png") 100% 60% no-repeat, 
+        background: url("/Test-Media-Works/images/registration-sm.png") 100% 60% no-repeat, 
         linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
     }
 
     @include media(max, 'xs') {
         width: 95%;
-        background: url("./../../images/registration-sm.png") 100% 67% no-repeat, 
+        background: url("/Test-Media-Works/images/registration-sm.png") 100% 67% no-repeat, 
         linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
         width: 263px;
         padding-bottom: 110px;
