@@ -192,19 +192,19 @@ body {
 }
 
 .first-screen {
-  background: url("./../../images/first-screen-pic.png") 80% 65% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+  background: url("/Test-Media-Works/images/first-screen-pic.png") 80% 65% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   padding-bottom: 169px;
   padding-top: 30px;
   font-family: "Segoe UI";
 }
 @media only screen and (max-width: 1200px) {
   .first-screen {
-    background-image: url("./../../images/first-screen-pic.png") 77% 89% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background-image: url("/Test-Media-Works/images/first-screen-pic.png") 77% 89% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   }
 }
 @media only screen and (max-width: 992px) {
   .first-screen {
-    background: url("./../../images/first-screen-pic-992.png") 92% 66% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background: url("/Test-Media-Works/images/first-screen-pic-992.png") 92% 66% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -604,14 +604,14 @@ body {
     padding-top: 39px;
     padding-left: 36px;
     width: 97%;
-    background: url("./../../images/registration-992.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background: url("/Test-Media-Works/images/registration-992.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   }
 }
 @media only screen and (max-width: 768px) {
   .second-screen__registration {
     width: 95%;
     padding-bottom: 46px;
-    background: url("./../../images/registration-768.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background: url("/Test-Media-Works/images/registration-768.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   }
 }
 @media only screen and (max-width: 576px) {
@@ -620,13 +620,13 @@ body {
     width: 93%;
     padding-top: 24px;
     padding-left: 24px;
-    background: url("./../../images/registration-sm.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background: url("/Test-Media-Works/images/registration-sm.png") 100% 60% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   }
 }
 @media only screen and (max-width: 320px) {
   .second-screen__registration {
     width: 95%;
-    background: url("./../../images/registration-sm.png") 100% 67% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    background: url("/Test-Media-Works/images/registration-sm.png") 100% 67% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
     width: 263px;
     padding-bottom: 110px;
   }
