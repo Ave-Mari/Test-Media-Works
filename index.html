@@ -19,12 +19,12 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><button class="header__clients-btn">Клиентам</button></li>
+                        <li class="nav__item"><a href="" class="header__clients-btn">Клиентам</a></li>
                         <li class="nav__item">              
                             <svg class="login__icon">
                             <use xlink:href="svg/sprite.svg#login"></use>
                         </svg> 
-                        <button class="header__login-btn">Войти</button></li>
+                        <a href="#"   class="header__login-btn">Войти</a></li>
                     </ul>
                 </nav>
                 <div class="burger-menu" data-state="" onclick="burgerClick(this)">
@@ -36,13 +36,13 @@
                 <nav class="nav-burger">
                     <ul class="nav-burger__list">
                         <li class="nav-burger__item">
-                            <button class="nav-burger__clients-btn">Клиентам</button>
+                            <a class="nav-burger__clients-btn">Клиентам</a>
                         </li>
                         <li class="nav-burger__item">              
                             <svg class="login__icon">
                             <use xlink:href="svg/sprite.svg#login"></use>
                         </svg> 
-                        <button class="nav-burger__login-btn">&#160;Войти</button></li>
+                        <a href="#"   class="nav-burger__login-btn">&#160;Войти</a></li>
                     </ul>
                 </nav>
             </header>
@@ -117,9 +117,34 @@
             </div>
         </div>
     </section>
+
+
+    <div id="openModal" class="modal-screen">
+        <div class="modal">
+            <div class="modal-wrapper">
+                <div class="">
+                    <div class="modal-header">                
+                      <a href="#close" title="Close" class="modal-close">×</a>
+                      <h3 class="modal-title">Авторизация</h3>
+                    </div>
+                    <div class="modal-body">    
+                        <p class="modal-input__text">E-mail</p>
+                      <input class="modal-input" type="email" placeholder="Введите e-mail">
+                      <p class="modal-input__text">Пароль</p>
+                      <input class="modal-input" type="password" placeholder="Введите пароль">
+                      <button class="modal-button">Войти</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+
+
     </div>
 
 <script src="./js/burger-menu.js"></script>
+<script src="./js/modal.js"></script>
  
     
 </body>

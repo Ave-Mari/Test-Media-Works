@@ -17,7 +17,7 @@ body {
 }
 
 .nav {
-  width: 25%;
+  width: 23%;
 }
 @media only screen and (max-width: 768px) {
   .nav {
@@ -51,8 +51,9 @@ body {
   border: none;
   color: #fff;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   .header__clients-btn {
@@ -65,8 +66,9 @@ body {
   border: none;
   color: #fff;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   .header__login-btn {
@@ -77,17 +79,23 @@ body {
 .login__icon {
   width: 24px;
   height: 24px;
+  padding-right: 12px;
 }
 
 .nav-burger {
   font-family: "Whitney";
   background: #f25b24;
-  width: 31%;
+  width: 180px;
   border-radius: 4px;
   padding: 63px 0px 19px 11px;
   left: -9999999999%;
   position: absolute;
   top: 1%;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  transition: height 0.3s ease-in-out;
 }
 
 .nav-burger__list {
@@ -101,7 +109,7 @@ body {
   padding-left: 11px;
   margin-bottom: 18px;
 }
-.nav-burger__item button {
+.nav-burger__item a {
   background: none;
   border: none;
   font-size: 33px;
@@ -109,6 +117,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   font-weight: 200;
+  text-decoration: none;
 }
 .nav-burger__item:last-child {
   margin-bottom: 0;
@@ -146,6 +155,7 @@ body {
   width: 24px;
   height: 3px;
   margin-bottom: 5px;
+  transition: 0.3s ease;
 }
 .burger-menu__line:last-child {
   margin-bottom: 0;
@@ -182,7 +192,7 @@ body {
 }
 
 .first-screen {
-  background: url("./../../images/first-screen-pic.png") 99% 65% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+  background: url("./../../images/first-screen-pic.png") 80% 65% no-repeat, linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
   padding-bottom: 169px;
   padding-top: 30px;
   font-family: "Segoe UI";
@@ -244,7 +254,6 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
-  border: none;
   border-radius: 4px;
   background: #F25B24;
   padding: 16px 60px;
@@ -654,5 +663,127 @@ body {
 @media only screen and (max-width: 320px) {
   .second-screen__registration__headline {
     margin-bottom: 127px;
+  }
+}
+
+.modal-screen {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  background: white;
+  border-radius: 6px;
+  width: 434px;
+  font-family: "Whitney";
+  margin: 0 auto;
+  padding: 42px 32px;
+  position: fixed;
+  top: 18%;
+  right: 0;
+  left: -99999999%;
+  z-index: 100000;
+  box-shadow: 0px 0px 20px black;
+}
+@media only screen and (max-width: 576px) {
+  .modal {
+    width: 66%;
+  }
+}
+
+.modal-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.modal-input {
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid #DDDAE7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #fff;
+  padding: 13px 19px 13px 19px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+@media only screen and (max-width: 576px) {
+  .modal-input {
+    width: 100%;
+  }
+}
+
+.modal-input__text {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  color: #918D9A;
+  font-size: 39px;
+  text-decoration: none;
+  font-weight: 200;
+  position: absolute;
+  top: 2%;
+  left: 91%;
+}
+
+.modal-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 4px;
+  background: #F25B24;
+  padding: 16px 160px;
+  cursor: pointer;
+  margin-top: 21px;
+  margin-bottom: 11px;
+}
+.modal-button:hover {
+  background: #ce4919;
+}
+@media only screen and (max-width: 576px) {
+  .modal-button {
+    padding: 16px 110px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .modal-button {
+    padding: 16px 90px;
   }
 }

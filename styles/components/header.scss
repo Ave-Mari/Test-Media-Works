@@ -10,7 +10,7 @@
 }
 
 .nav {
-    width: 25%;
+    width: 23%;
 
     @include media(max, 'md') {
         width: 40%;
@@ -49,8 +49,9 @@
     border: none;
     color: #fff;
     font-size: $text-font-size;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
 
     @include media(max, 'md') {
         font-size: 25px;
@@ -62,8 +63,9 @@
     border: none;
     color: #fff;
     font-size: $text-font-size;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
 
     @include media(max, 'md') {
         font-size: 25px;
@@ -74,5 +76,6 @@
 .login__icon {
     width: 24px;
     height: 24px;
+    padding-right: 12px;
 }
 

@@ -1,0 +1,130 @@
+.modal-screen {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+    overflow: auto;  
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal {
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 434px;
+    font-family: $font-family-whitney;
+    margin: 0 auto;
+    padding: 42px 32px;
+    position: fixed; 
+    top: 18%;
+    right: 0;
+    left: -99999999%;
+    z-index: 100000;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+
+
+    @include media(max, 'sm') {
+        width: 66%;
+    }
+
+}
+
+
+.modal-body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.modal-input {
+    font-size: $text-font-size;
+    font-weight: 300;
+    border: 1px solid #DDDAE7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #fff;
+    padding: 13px 19px 13px 19px;
+    width: 100%;
+    margin-bottom: 18px;
+
+    @include media(max, 'sm') {
+        width: 100%;
+    }
+
+  
+}
+
+
+.modal-input__text {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+.modal-close {
+    color: #918D9A;
+    font-size: 39px;
+    text-decoration: none;
+    font-weight: 200;
+    position: absolute;
+    top: 2%;
+    left: 91%;
+}
+
+
+.modal-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: $text-font-size;
+    font-weight: 300;
+    border-radius: 4px;
+    background: #F25B24;
+    padding: 16px 160px;
+    cursor: pointer;
+    margin-top: 21px;
+    margin-bottom: 11px;
+
+    &:hover {
+        background: #ce4919;
+    }
+
+    @include media(max, 'sm') {
+        padding: 16px 110px;
+    }
+
+    @include media(max, 's') {
+        padding: 16px 90px;
+    }
+
+
+}

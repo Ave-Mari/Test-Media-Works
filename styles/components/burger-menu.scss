@@ -2,14 +2,23 @@
 .nav-burger {
     font-family: $font-family-whitney;
     background: #f25b24;
-    width: 31%;
+    width: 180px;
     border-radius: 4px;
     padding: 63px 0px 19px 11px;
     left: -9999999999%;
     position: absolute;
     top: 1%;
+    height: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    //left: 0;
+    right: 0;
 
 
+    transition: height .3s ease-in-out;
+
+//height: 165px;
 
 }
 
@@ -22,7 +31,7 @@
 }
 
 .nav-burger__item {
-    button {
+    a {
         background: none;
         border: none;
         font-size: 33px;
@@ -30,6 +39,7 @@
         padding-left: 0;
         padding-right: 0;
         font-weight: 200;
+        text-decoration: none;
     }
     padding-left: 11px;
 
@@ -91,6 +101,7 @@
     width: 24px;
     height: 3px;
     margin-bottom: 5px;
+    transition: .3s ease;
     
     &:last-child {
         margin-bottom: 0;

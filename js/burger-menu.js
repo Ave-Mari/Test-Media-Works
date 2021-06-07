@@ -9,9 +9,11 @@ function burgerClick() {
 
 
         if ("active" === burgerMenu.getAttribute("data-state")) {
-            burgerMenuList.style.left = '61%';
+            burgerMenuList.style.left = '0';
+            burgerMenuList.style.height = '165px';
         } else {
             burgerMenuList.style.left = '-9999999999%';
+            burgerMenuList.style.height = '0';
         }
 
         
