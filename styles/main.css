@@ -697,6 +697,7 @@ body {
 @media only screen and (max-width: 576px) {
   .modal {
     width: 66%;
+    top: 10%;
   }
 }
 

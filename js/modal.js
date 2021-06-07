@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   
   modalOpenMobile.addEventListener('click', () => {
+    modalScreen.style.display = 'inline-block';
     modalBody.style.left = '0';
   })
 
